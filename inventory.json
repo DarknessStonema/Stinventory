@@ -1,0 +1,349 @@
+[
+  {
+    "category": "1. Stock",
+    "items": [
+      {
+        "name": "Ananas",
+        "quantity": "1"
+      },
+      {
+        "name": "Currywürfel",
+        "quantity": "2 angefangen"
+      },
+      {
+        "name": "Darvida",
+        "quantity": "12x"
+      },
+      {
+        "name": "Erdnussbutter",
+        "quantity": "2 angefangen, 1 ganzes"
+      },
+      {
+        "name": "Fünfkornflocken",
+        "quantity": "1"
+      },
+      {
+        "name": "Hafer",
+        "quantity": "1 angefangen"
+      },
+      {
+        "name": "Haferflocken",
+        "quantity": "4"
+      },
+      {
+        "name": "Hartweizengriess",
+        "quantity": "1"
+      },
+      {
+        "name": "Hefeflocken",
+        "quantity": "fast leer"
+      },
+      {
+        "name": "Hörnli",
+        "quantity": "0"
+      },
+      {
+        "name": "Instant noodels",
+        "quantity": "19"
+      },
+      {
+        "name": "Lasagne blätter",
+        "quantity": "1 normal, ¼ normal, ¼ spinat"
+      },
+      {
+        "name": "Mais",
+        "quantity": "1"
+      },
+      {
+        "name": "Maiskolben",
+        "quantity": "1"
+      },
+      {
+        "name": "Orichiette",
+        "quantity": "½"
+      },
+      {
+        "name": "Penne",
+        "quantity": "1 kg"
+      },
+      {
+        "name": "Pesto grün",
+        "quantity": "1"
+      },
+      {
+        "name": "Polenta",
+        "quantity": "1"
+      },
+      {
+        "name": "Quick soup",
+        "quantity": "3 Packungen"
+      },
+      {
+        "name": "Risotto",
+        "quantity": "4"
+      },
+      {
+        "name": "Sonnenblumenkernen",
+        "quantity": "3 Packungen"
+      },
+      {
+        "name": "Spaghetti",
+        "quantity": "150g (Wenig)"
+      }
+    ]
+  },
+  {
+    "category": "2. Stock",
+    "items": [
+      {
+        "name": "Chrisantemen",
+        "quantity": "1"
+      },
+      {
+        "name": "Chong cao hua (gam cao)",
+        "quantity": "2"
+      },
+      {
+        "name": "Dessert mix vietnamesisch",
+        "quantity": "1"
+      },
+      {
+        "name": "Dried juba knots",
+        "quantity": "1"
+      },
+      {
+        "name": "Dried Longan Pulp",
+        "quantity": "1"
+      },
+      {
+        "name": "Eight treasure",
+        "quantity": "1"
+      },
+      {
+        "name": "Gojibeeren",
+        "quantity": "2"
+      },
+      {
+        "name": "Jin yin hua",
+        "quantity": "1"
+      },
+      {
+        "name": "Jujube",
+        "quantity": "2, ½ Packungen"
+      },
+      {
+        "name": "Kardamom",
+        "quantity": "1"
+      },
+      {
+        "name": "Lotuskerne",
+        "quantity": "1"
+      },
+      {
+        "name": "Luo han guo",
+        "quantity": "4"
+      },
+      {
+        "name": "Medizin mix",
+        "quantity": "4"
+      },
+      {
+        "name": "Mu chom",
+        "quantity": "1"
+      },
+      {
+        "name": "Qiànshi",
+        "quantity": "1"
+      },
+      {
+        "name": "Schwarze datteln",
+        "quantity": "1"
+      },
+      {
+        "name": "Shiitake medizin",
+        "quantity": "1"
+      },
+      {
+        "name": "Sour pickeled green mustard",
+        "quantity": "1"
+      },
+      {
+        "name": "Süssholz",
+        "quantity": "1"
+      },
+      {
+        "name": "Weissdornflocken",
+        "quantity": "2"
+      },
+      {
+        "name": "Wild yam",
+        "quantity": "1"
+      },
+      {
+        "name": "Yi mu cao",
+        "quantity": "1"
+      }
+    ]
+  },
+  {
+    "category": "3. Stock",
+    "items": [
+      {
+        "name": "Bun",
+        "quantity": "4, ½ pack"
+      },
+      {
+        "name": "Eiernudeln",
+        "quantity": "200g"
+      },
+      {
+        "name": "Glassnudeln",
+        "quantity": "2"
+      },
+      {
+        "name": "Getrocknete Soja Knoten",
+        "quantity": "3, 1, 1, ½"
+      },
+      {
+        "name": "Mie Nudeln",
+        "quantity": "200g"
+      },
+      {
+        "name": "Reisnudeln 5mm",
+        "quantity": "2 Packungen"
+      },
+      {
+        "name": "Shirataki nudeln",
+        "quantity": "1"
+      },
+      {
+        "name": "Sojasheets",
+        "quantity": "6, ½"
+      },
+      {
+        "name": "Sweet potatoe nudeln",
+        "quantity": "2"
+      },
+      {
+        "name": "Tofustäbchen",
+        "quantity": "4, ½, ½ Packungen"
+      },
+      {
+        "name": "Wheat nudeln",
+        "quantity": "1"
+      }
+    ]
+  },
+  {
+    "category": "4. Stock",
+    "items": [
+      {
+        "name": "Currypulver",
+        "quantity": "1 angefangen"
+      },
+      {
+        "name": "Dried seetang",
+        "quantity": "8, 1 Glas"
+      },
+      {
+        "name": "Nori",
+        "quantity": "10, 1 angefangen"
+      },
+      {
+        "name": "Rice Paper",
+        "quantity": "4, ¼ Packungen"
+      },
+      {
+        "name": "Shiitake",
+        "quantity": "2"
+      },
+      {
+        "name": "Vegetarian Mushroom fluff",
+        "quantity": "2"
+      }
+    ]
+  },
+  {
+    "category": "5. Stock",
+    "items": [
+      {
+        "name": "Den xanh long",
+        "quantity": "1"
+      },
+      {
+        "name": "Gari",
+        "quantity": "1 angefangen"
+      },
+      {
+        "name": "Gelbe Mungbohnen",
+        "quantity": "5, 1 angefangen"
+      },
+      {
+        "name": "Grüne Mungbohnen",
+        "quantity": "3, 1 Grosses"
+      },
+      {
+        "name": "Hoisin Sosse",
+        "quantity": "1"
+      },
+      {
+        "name": "Ketchup",
+        "quantity": "1"
+      },
+      {
+        "name": "Kokosnusmilch (Papierpacket)",
+        "quantity": "1"
+      },
+      {
+        "name": "Kokosnussmilch (Dose)",
+        "quantity": "2"
+      },
+      {
+        "name": "Mayonnaise",
+        "quantity": "1"
+      },
+      {
+        "name": "Röstzwiebeln",
+        "quantity": "6, ½"
+      },
+      {
+        "name": "Senf",
+        "quantity": "0"
+      },
+      {
+        "name": "Sesam",
+        "quantity": "1 (hell), 1 (dunkel), 2 angefangen"
+      },
+      {
+        "name": "Sojasauce",
+        "quantity": "1"
+      },
+      {
+        "name": "Sriracha",
+        "quantity": "2"
+      },
+      {
+        "name": "Süss-Sauer Sosse",
+        "quantity": "3"
+      },
+      {
+        "name": "Tomatemark",
+        "quantity": "1"
+      },
+      {
+        "name": "Tomatensosse",
+        "quantity": "1"
+      }
+    ]
+  },
+  {
+    "category": "Regal",
+    "items": [
+      {
+        "name": "Luo han guo",
+        "quantity": "3",
+        "linked_to": "2. Stock"
+      }
+    ]
+  }
+]
