@@ -150,4 +150,4 @@ def delete_item(category, item_id):
     return {'error': 'Item not found'}
 
 # --- Run App ---
-run(app, host='192.168.1.39', port=5000, reloader=True, debug=True)
+run(app, host='192.168.1.230', port=5000, reloader=True, debug=True)
