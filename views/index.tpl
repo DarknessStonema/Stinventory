@@ -4,10 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Pantry Inventar</title>
-    <link rel="stylesheet" href="/static/style.css?=22">
+    <link rel="stylesheet" href="/static/style.css?=222">
     <script src="/static/script.js" defer></script>
+    
 </head>
 <body>
+    % include('static/navbar.tpl')
     <div class="container">
         <h1>Pantry Inventar</h1>
         <form id="addForm">

@@ -7,26 +7,72 @@ body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #f1f3f5;
+    color: #212529;
+    line-height: 1.6;
 }
 
 /* Container */
 .container {
-    max-width: 90%;
+    max-width: 80%;
     margin: 2rem auto;
     padding: 1.5rem;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 }
 
 /* Header */
-h1 {
+h1, h2 {
     text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    color: #007bff;
+    color: #0077b6;
+    margin-bottom: 1.5rem;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    background-color: #0077b6;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-links a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-links {
+        flex-direction: row;
+    }
 }
 
 /* Form styling */
@@ -45,29 +91,29 @@ input[type="number"] {
     border: 1px solid #ccc;
     border-radius: 6px;
     width: 100%;
-    transition: border-color 0.2s ease;
+    transition: 0.2s ease;
 }
 
-select:focus,
-input:focus {
+input:focus,
+select:focus {
     border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
     outline: none;
 }
 
-/* Button styling */
 button {
     padding: 0.75rem;
     font-size: 1rem;
     border: none;
     border-radius: 6px;
-    background-color: #007bff;
+    background-color: #0077b6;
     color: white;
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #005f99;
 }
 
 /* Inventory list */
@@ -77,16 +123,15 @@ ul {
     margin: 0;
 }
 
-/* List items */
 li {
-    background-color: #fdfdfd;
+    background-color: #f9f9f9;
     padding: 1rem;
     margin-bottom: 1rem;
-    border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.75rem;
     animation: fadeIn 0.3s ease-in-out;
 }
 
@@ -95,7 +140,6 @@ li {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Inputs inside list items */
 li input {
     padding: 0.5rem;
     font-size: 1rem;
@@ -104,7 +148,6 @@ li input {
     width: 100%;
 }
 
-/* Button group */
 .button-group {
     display: flex;
     gap: 0.5rem;
@@ -129,14 +172,14 @@ li input {
 
 .modal-content {
     background-color: #fff;
-    margin: 15% auto;
+    margin: 20vh auto;
     padding: 2rem;
     border-radius: 8px;
-    width: 300px;
+    width: 90%;
+    max-width: 400px;
     text-align: center;
 }
 
-/* Modal buttons */
 #confirmYes {
     background-color: #dc3545;
 }
@@ -153,15 +196,14 @@ li input {
     background-color: #5a6268;
 }
 
-/* Search bar styling */
+/* Search bar */
 #searchInput {
     padding: 0.75rem;
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 6px;
     width: 100%;
-    margin-bottom: 2rem;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 1.5rem;
     background-image: url('data:image/svg+xml;utf8,<svg fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2a8 8 0 015.29 13.71l5 5a1 1 0 01-1.42 1.42l-5-5A8 8 0 1110 2zm0 2a6 6 0 100 12 6 6 0 000-12z"/></svg>');
     background-repeat: no-repeat;
     background-position: right 0.75rem center;
@@ -175,27 +217,21 @@ li input {
     outline: none;
 }
 
-/* Duplicate button */
-#viewDuplicatesBtn {
-    margin-bottom: 1.5rem;
-    background-color: #ffc107;
-    color: #212529;
+/* Highlight duplicates */
+li.duplicate {
+    border: 2px solid #ffc107;
+    background-color: #fff8e1;
 }
 
-#viewDuplicatesBtn:hover {
-    background-color: #e0a800;
-}
-
-/* Toast notification */
+/* Toast */
 .toast {
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 1rem;
+    right: 1rem;
     background-color: #343a40;
     color: #fff;
     padding: 1rem 1.5rem;
     border-radius: 6px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -208,13 +244,56 @@ li input {
     transform: translateY(0);
 }
 
-/* Highlight duplicates */
-li.duplicate {
-    border: 2px solid #ffc107;
-    background-color: #fff8e1;
+/* Item counter */
+.item-counter {
+    text-align: right;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #555;
 }
 
-/* Collapsible category sections */
+/* Stopwatch */
+.ice-stopwatch {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+#iceTimerDisplay {
+    font-size: 2.5rem;
+    font-family: monospace;
+    margin: 1rem 0;
+}
+
+.ice-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.ice-buttons button {
+    background-color: #17a2b8;
+}
+
+.ice-buttons button:hover {
+    background-color: #138496;
+}
+
+@media (min-width: 480px) {
+    .ice-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .ice-buttons button {
+        flex: 1;
+    }
+}
+
+/* Collapsible sections */
 .category-section {
     margin-bottom: 1rem;
     border: 1px solid #dee2e6;
@@ -243,36 +322,4 @@ li.duplicate {
 
 .category-items.show {
     display: block;
-}
-.item-counter {
-    text-align: right;
-    margin-top: 2rem;
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Responsive layout */
-@media (min-width: 600px) {
-    li {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    li input {
-        flex: 1;
-        margin-right: 0.5rem;
-    }
-
-    .button-group {
-        flex: 0 0 auto;
-        display: flex;
-        gap: 0.5rem;
-    }
-
-    .button-group button {
-        flex: none;
-        width: auto;
-    }
 }

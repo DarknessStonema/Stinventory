@@ -2,10 +2,17 @@ from bottle import Bottle, run, request, response, static_file, template
 import json
 import os
 import unicodedata
+import time
 
 app = Bottle()
 DATA_FILE = 'inventory.json'
+NAS_PATH = '/mnt/nas_inventory/inventory.json'
 
+# --- Ice Stopwatch Config ---
+MAX_DURATION = 3 * 60 * 60  # 3 hours in seconds
+ice_start_time = None
+
+# --- Utility Functions ---
 def normalize(text):
     return unicodedata.normalize('NFC', text.strip().casefold())
 
@@ -18,7 +25,13 @@ def load_inventory():
 def save_inventory(data):
     with open(DATA_FILE, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
+    try:
+        with open(NAS_PATH, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"Failed to save to NAS: {e}")
 
+# --- Routes ---
 @app.route('/')
 def index():
     return template('views/index.tpl')
@@ -27,6 +40,44 @@ def index():
 def serve_static(filename):
     return static_file(filename, root='static')
 
+@app.route('/ice')
+def ice_stopwatch():
+    return template('views/ice.tpl')
+
+# --- Stopwatch API ---
+@app.get('/api/ice')
+def get_ice_status():
+    global ice_start_time
+    now = time.time()
+
+    if ice_start_time is None:
+        return {'status': 'stopped'}
+
+    elapsed = now - ice_start_time
+    remaining = max(0, MAX_DURATION - elapsed)
+    ready = elapsed >= MAX_DURATION
+
+    return {
+        'status': 'running',
+        'start_time': ice_start_time,
+        'elapsed': int(elapsed),
+        'remaining': int(remaining),
+        'ready': ready
+    }
+
+@app.post('/api/ice/start')
+def start_ice_timer():
+    global ice_start_time
+    ice_start_time = time.time()
+    return {'status': 'started', 'start_time': ice_start_time}
+
+@app.post('/api/ice/reset')
+def reset_ice_timer():
+    global ice_start_time
+    ice_start_time = None
+    return {'status': 'reset'}
+
+# --- Inventory API ---
 @app.get('/api/categories')
 def get_categories():
     response.content_type = 'application/json; charset=utf-8'
@@ -98,4 +149,5 @@ def delete_item(category, item_id):
     response.status = 404
     return {'error': 'Item not found'}
 
+# --- Run App ---
 run(app, host='192.168.1.39', port=5000, reloader=True, debug=True)
