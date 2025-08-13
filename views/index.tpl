@@ -3,10 +3,17 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <link rel="manifest" href="/static/manifest.json">
+    <meta name="theme-color" content="#007bff">
     <title>Pantry Inventar</title>
     <link rel="stylesheet" href="/static/style.css?=222">
     <script src="/static/script.js" defer></script>
-    
+    <script src="/static/pwa.js" defer></script>
+    <link rel="icon" href="/static/WhitePantry192px.png" sizes="192x192">
+    <link rel="icon" href="/static/WhitePantry512px.png" sizes="512x512">
+    <link rel="mask-icon" href="/static/WhitePantry192px.png" color="#007bff">
+    <link rel="mask-icon" href="/static/WhitePantry512px.png" color="#007bff">
+
 </head>
 <body>
     % include('static/navbar.tpl')
@@ -42,6 +49,5 @@
 
 
     </div>
-        
 </body>
 </html>

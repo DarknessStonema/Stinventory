@@ -11,14 +11,6 @@
         "quantity": "2 angefangen"
       },
       {
-        "name": "Darvida",
-        "quantity": "12x"
-      },
-      {
-        "name": "Erdnussbutter",
-        "quantity": "2 angefangen, 1 ganzes"
-      },
-      {
         "name": "Fünfkornflocken",
         "quantity": "1"
       },
@@ -43,7 +35,7 @@
         "quantity": "0"
       },
       {
-        "name": "Instant noodels",
+        "name": "Instant noodles",
         "quantity": "18"
       },
       {
@@ -52,7 +44,7 @@
       },
       {
         "name": "Mais",
-        "quantity": "1"
+        "quantity": "2"
       },
       {
         "name": "Maiskolben",
@@ -76,7 +68,7 @@
       },
       {
         "name": "Quick soup",
-        "quantity": "3 Packungen"
+        "quantity": "3 arten"
       },
       {
         "name": "Risotto",
@@ -89,6 +81,14 @@
       {
         "name": "Spaghetti",
         "quantity": "150g (Wenig)"
+      },
+      {
+        "name": "Darvida",
+        "quantity": "11"
+      },
+      {
+        "name": "Adideo (Oreo) ",
+        "quantity": "1, angefangen"
       }
     ]
   },
@@ -213,18 +213,6 @@
         "quantity": "2 Packungen"
       },
       {
-        "name": "Shirataki nudeln",
-        "quantity": "1"
-      },
-      {
-        "name": "Sojasheets",
-        "quantity": "6, ½"
-      },
-      {
-        "name": "Sweet potatoe nudeln",
-        "quantity": "2"
-      },
-      {
         "name": "Tofustäbchen",
         "quantity": "4, ½, ½ Packungen"
       },
@@ -243,11 +231,11 @@
       },
       {
         "name": "Dried seetang",
-        "quantity": "8, 1 Glas"
+        "quantity": "7, 1 angefangenes"
       },
       {
         "name": "Nori",
-        "quantity": "10, 1 angefangen"
+        "quantity": "9, 2 angefangen"
       },
       {
         "name": "Rice Paper",
@@ -343,6 +331,14 @@
         "name": "Luo han guo",
         "quantity": "3",
         "linked_to": "2. Stock"
+      },
+      {
+        "name": "Zwiebel",
+        "quantity": "2"
+      },
+      {
+        "name": "Knoblauch",
+        "quantity": "3 Fuss"
       }
     ]
   }
